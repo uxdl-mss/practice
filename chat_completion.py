@@ -1,12 +1,15 @@
 import os
 from openai import AzureOpenAI
+from dotenv import load_dotenv
+load_dotenv()
 
-endpoint = "https://vinay-me2jz5pg-eastus2.cognitiveservices.azure.com/"
-model_name = "gpt-5-nano"
-deployment = "gpt-5-nano-2"
+endpoint = os.getenv("endpoint")
+model_name = os.getenv("model_name")
+deployment = os.getenv("deployment")
+subscription_key = os.getenv("subscription_key")
+api_version = os.getenv("api_version")
 
-subscription_key = "5LzC7nxdTjdpLRsI8JO9W0Zcui4THwSt16xEfcZ7fp6iFDimCf6VJQQJ99BHACHYHv6XJ3w3AAAAACOGZBos"
-api_version = "2024-12-01-preview"
+
 
 client = AzureOpenAI(
     api_version=api_version,

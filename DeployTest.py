@@ -14,7 +14,7 @@ client = AzureOpenAI(
     api_key=subscription_key,
 )
 
-'''response = client.chat.completions.create(
+response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
@@ -29,5 +29,5 @@ client = AzureOpenAI(
     model=deployment
 )
 
-print(response.choices[0].message.content)'''
+print(response.choices[0].message.content)
 

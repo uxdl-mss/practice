@@ -1,0 +1,13 @@
+Crawler loop:
+Fetch-Parse-Extract
+
+
+***Crawlers MUST AVOID:***
+1.Not using timeouts → crawler hangs
+2.Not setting User-Agent → websites block you
+3.Infinite loops → because visited set missing
+4.Blindly crawling the entire internet → nightmare
+5.Not handling relative URLs
+6.Trying to crawl JavaScript-heavy sites with requests
+7.Not checking robots.txt
+

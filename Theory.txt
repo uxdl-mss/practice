@@ -1,0 +1,17 @@
+20-11-2025
+
+studied about the overall crawler architecture.
+major components: crawler, content processor, LLM service, embeddings service, enrichment service, and MongoDB storage.
+
+went through main.py — entry point of the crawling process.
+Learned how async crawler works
+asyncio to handle multiple links at the same time.
+aiohttp vs Playwright 
+researched some on the general flow of markdown conversion and cleaning works.
+how UpdateOne is used for performance
+
+
+Got a basic idea of post-crawling processes — using LLMs, embeddings, enrichment steps.
+
+
+currently still going through main.py and planning to go through content processor next.
